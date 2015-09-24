@@ -1,0 +1,33 @@
+{
+  "name": "jazzon-faker",
+  "version": "1.0.0",
+  "description": "Generate fake data using faker",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.js",
+    "posttest": "eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tornqvist/jazzon-faker.git"
+  },
+  "keywords": [
+    "jazzon",
+    "faker",
+    "mock"
+  ],
+  "author": "Carl Törnqvist <calle.tornqvist@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tornqvist/jazzon-faker/issues"
+  },
+  "homepage": "https://github.com/tornqvist/jazzon-faker#readme",
+  "devDependencies": {
+    "eslint": "^1.5.1",
+    "jazzon": "^0.2.0",
+    "tape": "^4.2.0"
+  },
+  "dependencies": {
+    "faker": "^3.0.1"
+  }
+}
