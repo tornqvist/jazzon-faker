@@ -2,7 +2,7 @@
 
 module.exports = function (options) {
   options = (options || {});
-  
+
   let faker;
 
   if (options.locale) {
@@ -12,6 +12,8 @@ module.exports = function (options) {
   }
 
   return function (value, helper, arr) {
+    helper = helper.replace(/^faker\./, '');
+
     let category, method;
     let props = helper.split('.');
 

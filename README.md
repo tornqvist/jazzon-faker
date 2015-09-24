@@ -2,6 +2,12 @@
 
 > Generate fake data using faker
 
+## Installation
+
+```bash
+$ npm install --save jazzon-faker
+```
+
 ## Usage
 
 All methods in [faker.js](https://github.com/Marak/Faker.js) are supported using dot notaion.
@@ -14,7 +20,7 @@ let json = {
   "name": "@{ name.findName }",
   "bio": "@{ lorem.sentences(3) }",
   "email": "@{ internet.email }"
-}
+};
 
 jazzon
   .use(faker())
@@ -31,9 +37,18 @@ jazzon
 */
 ```
 
+### Conflicting helper names
+
+To avoid conflict with other helpers one can prefix all the mehods with "faker".
+
+```
+name.findName === faker.name.findName
+```
+
 ## Options
 
 To set the locale of faker, supply the `locale` option to the plugin.
 
 ```javascript
 jazzon.use(faker({ locale: 'sv' }));
+```
